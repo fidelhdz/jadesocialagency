@@ -1,0 +1,81 @@
+---
+
+---
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 offset-lg-1">
+                <div class="hero-text">
+                    <small>Jade Social Agency</small>
+                    <h1>Donde la exclusividad<br />se une al detalle</h1>
+                    <h6>Coordinación de eventos sociales, invitaciones y tarjetería social, floristeria y decoración minimalista y charcutería de lujo.</h6>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center hero-decoration">
+                <img src="/images/figuras.webp" alt="" />
+                <div class="contact-data">
+                    <a href="#">hola@jadesocialagency.com</a><br />
+                    <a href="#">844 999 9999</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style lang="scss">
+    header {
+        padding: 40px 0 90px;
+
+        .hero-text {
+            margin-top: 50%;
+            transform: translateY(-50%);
+
+            small {
+                font-family: "Avenir Next", sans-serif;
+                font-weight: 600;
+                color: var(--jade-tormenta-color);
+            }
+
+            h1 {
+                font-size: 4rem;
+                font-family: "Emberly", serif;
+                color: var(--jade-grullo-color);
+                line-height: 0.95;
+            }
+
+            h6 {
+                font-size: 1rem;
+                color: rgb(255 255 255 / 0.6);
+            }
+        }
+        
+        .hero-decoration {
+            position: relative;
+
+            img {
+                filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.4));
+            }
+
+            .contact-data {
+                text-align: right;
+                position: absolute;
+                right: 10px;
+
+                a {
+                    font-size: 1rem;
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 1px;
+                    background-color: var(--jade-grullo-color);
+                    position: absolute;
+                    right: 0;
+                    top: -10px;
+                }
+            }
+        }
+    }
+</style>

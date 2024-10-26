@@ -1,0 +1,72 @@
+:root {
+    // Variables
+    --jade-electric-blue-color: #4A7177;
+    --jade-grullo-color: #A4A593;
+    --jade-bronce-color: #A78D5C;
+    --jade-tormenta-color: #DFCCC5;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--jade-electric-blue-color);
+    color: rgb(255 255 255);
+    position: relative;
+    background-image: url("/images/back.png");
+    background-size: 100px;
+
+    .j-back {
+        width: 380px;
+        height: 610px;
+        position: absolute;
+        background-image: url("/images/bg-j.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -80px;
+        left: 50%;
+    }
+
+    section {
+        padding: 90px 0;
+    }
+
+    footer {
+        @extend section;
+    }
+
+    header {
+        @extend section;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--jade-grullo-color);
+}
+
+h2 {
+    color: var(--jade-tormenta-color);
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: var(--jade-grullo-color);
+        margin-top: 10px;
+    }
+}
+
+h3 {
+    font-family: "Emberly", serif;
+    font-style: italic;
+    font-size: 2.25rem;
+    color: var(--jade-grullo-color);
+}
