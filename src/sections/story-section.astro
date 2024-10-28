@@ -8,11 +8,13 @@
                 <h2>Historia</h2>
             </div>
             <div class="col-12 col-lg-8">
-                <h3>El arte de crear momentos inolvidables</h3>
+                <h3 data-aos="fade-down">El arte de crear momentos inolvidables</h3>
 
                 <div class="story-space">
-                    <div class="image-story">Imagen</div>
-                    <div class="story-text">
+                    <div class="image-story" data-aos="fade-right">
+                        <div class="story-image"></div>
+                    </div>
+                    <div class="story-text" data-aos="fade-left">
                         <p>Todo comenzó en 2004 en Saltillo, Coahuila, con la creación artesanal de invitaciones para familia y amigos. La pasión por el diseño y la atención al detalle nos llevó a expandir horizontes en 2009, incorporando la coordinación de eventos sociales a nuestros servicios.</p>
                         <p>El viaje nos llevó hasta Tijuana, donde nuestras creaciones trascendieron fronteras, llegando a diferentes ciudades de Estados Unidos, países de Europa y Latinoamérica. En 2016, innovamos al introducir invitaciones digitales, adaptándonos a las nuevas tendencias sin perder nuestra esencia artesanal.</p>
                         <p>Hoy, de regreso a nuestras raíces coahuilenses, Jade Social Agency se ha transformado en un estudio integral de diseño de experiencias. A nuestros servicios tradicionales de invitaciones y coordinación de eventos, hemos sumado floristería, decoración minimalista y charcutería de lujo.</p>
@@ -26,6 +28,25 @@
 
 <style lang="scss">
     #story-section {
-        
+        h3 {
+            margin-bottom: 30px;
+        }
+        .story-space {
+            display: flex;
+            gap: 20px;
+
+            .image-story {
+                display: block;
+                width: 100%;
+                height: 350px;
+                background-color: #313131;
+                border-radius: 30px;
+                background-size: cover;
+                background-position: top right;
+                background-repeat: no-repeat;
+                background-image: url("/images/sand.webp");
+                border-bottom-right-radius: 0;
+            }
+        }
     }
 </style>

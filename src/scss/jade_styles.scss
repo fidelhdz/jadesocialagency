@@ -1,15 +1,18 @@
 :root {
-    // Variables
     --jade-electric-blue-color: #4A7177;
     --jade-grullo-color: #A4A593;
     --jade-bronce-color: #A78D5C;
     --jade-tormenta-color: #DFCCC5;
+    --jade-serif-font: "Emberly", serif;
+    // --jade-serif-font: "Times New Roman", serif;
+    --jade-sans-serif-font: "Avenir Next", sans-serif;
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Avenir Next", sans-serif;
+    font-family: var(--jade-sans-serif-font);
     font-size: 14px;
+    transition: all ease-in-out 0.4s;
 }
 
 body {
@@ -18,6 +21,7 @@ body {
     position: relative;
     background-image: url("/images/back.png");
     background-size: 100px;
+    scroll-behavior: smooth;
 
     .j-back {
         width: 380px;
@@ -65,8 +69,17 @@ h2 {
 }
 
 h3 {
-    font-family: "Emberly", serif;
+    font-family: var(--jade-serif-font);
     font-style: italic;
+    font-weight: 400;
+    font-optical-sizing: 2rem;
     font-size: 2.25rem;
     color: var(--jade-grullo-color);
+}
+
+h4 {
+    color: var(--jade-tormenta-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }

@@ -7,11 +7,45 @@
             <div class="col-12 col-lg-2">
                 <h2>Servicios</h2>
             </div>
-            <div class="col-12 col-lg-4">
-                Servicios
-            </div>
-            <div class="col-12 col-lg-4">
-                Servicios
+            <div class="col-12 col-lg-8">
+                <div class="servicios">
+                    <div class="servicio" data-aos="fade-right">
+                        <div class="serv-image invitaciones"></div>
+                        <div class="serv-title">
+                            <h4>Invitaciones y tarjetería social</h4>
+                        </div>
+                        <div class="serv-text">
+                            <p>Cada invitación es el primer capítulo de tu historia. Con papel, creatividad y dedicación, transformamos tus sueños en el primer vistazo de tu momento especial. Más que una tarjeta, creamos la primera impresión de tu celebración, donde cada detalle está cuidadosamente pensado para cautivar a tus invitados y anunciar la magia que está por venir.</p>
+                        </div>
+                    </div>
+                    <div class="servicio" data-aos="fade-left">
+                        <div class="serv-image coordinacion"></div>
+                        <div class="serv-title">
+                            <h4>Coordinación de eventos sociales</h4>
+                        </div>
+                        <div class="serv-text">
+                            <p>Convertimos tus ideas en realidad y tus sueños en momentos tangibles. Como directores de una sinfonía perfecta, orquestamos cada detalle de tu celebración para que tú solo tengas que preocuparte por disfrutar. Tu visión es nuestra inspiración, y tu tranquilidad, nuestra prioridad. Dejamos que la magia suceda mientras nosotros nos encargamos de todo.</p>
+                        </div>
+                    </div>
+                    <div class="servicio" data-aos="fade-right">
+                        <div class="serv-image decoracion"></div>
+                        <div class="serv-title">
+                            <h4>Floristería y decoración minimalista</h4>
+                        </div>
+                        <div class="serv-text">
+                            <p>En cada flor y en cada espacio vacío, encontramos la oportunidad de crear belleza. Nuestra filosofía minimalista se fusiona con la naturaleza para crear ambientes que respiran elegancia. Cada arreglo floral cuenta una historia, cada rincón decorado transmite una emoción, porque creemos que la verdadera belleza reside en los detalles sutiles y en la simplicidad refinada.</p>
+                        </div>
+                    </div>
+                    <div class="servicio" data-aos="fade-left">
+                        <div class="serv-image charcuteria"></div>
+                        <div class="serv-title">
+                            <h4>Charcutería de lujo</h4>
+                        </div>
+                        <div class="serv-text">
+                            <p>El arte de deleitar los sentidos se materializa en nuestras tablas de charcutería. Cada selección es una obra maestra culinaria donde los sabores, texturas y presentación se entrelazan en perfecta armonía. No solo ofrecemos manjares; creamos experiencias gastronómicas que elevan cada momento a un nivel extraordinario. Porque el buen gusto se aprecia en cada detalle.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -19,6 +53,47 @@
 
 <style lang="scss">
     #services-section {
-        
+        .servicios {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 30px;
+
+            .servicio {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .serv-image {
+                    display: block;
+                    width: 100%;
+                    height: 260px;
+                    background-color: #313131;
+                    border-radius: 30px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    &.invitaciones {
+                        border-bottom-right-radius: 0;
+                        background-image: url("/images/invitaciones.webp");
+                    }
+
+                    &.coordinacion {
+                        border-bottom-left-radius: 0;
+                        background-image: url("/images/coordinaciones.webp");
+                    }
+
+                    &.decoracion {
+                        border-top-right-radius: 0;
+                        background-image: url("/images/decoracion.webp");
+                    }
+
+                    &.charcuteria {
+                        border-top-left-radius: 0;
+                        background-image: url("/images/charcuteria.webp");
+                    }
+                }
+            }
+        }
     }
 </style>

@@ -1,7 +1,7 @@
 ---
 
 ---
-<header>
+<header id="top">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-5 offset-lg-1">
@@ -24,23 +24,26 @@
 
 <style lang="scss">
     header {
-        padding: 40px 0 90px;
+        padding: 140px 0 90px;
 
         .hero-text {
             margin-top: 50%;
             transform: translateY(-50%);
 
             small {
-                font-family: "Avenir Next", sans-serif;
+                font-family: var(--jade-sans-serif-font);
                 font-weight: 600;
                 color: var(--jade-tormenta-color);
             }
 
             h1 {
                 font-size: 4rem;
-                font-family: "Emberly", serif;
+                font-family: var(--jade-serif-font);
                 color: var(--jade-grullo-color);
                 line-height: 0.95;
+                margin-bottom: 20px;
+                font-weight: 400;
+                font-style: italic;
             }
 
             h6 {

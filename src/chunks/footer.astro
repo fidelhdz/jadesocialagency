@@ -4,15 +4,39 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-3">
-                DR
+            <div class="col-12 col-lg-3 text-center">
+                <img src="/images/jade-2-logo.svg" width="280px" alt="" class="footer-logo" />
+                <p class="dr-text">&copy; 2024 Todos los derechos reservados, Jade Social Agency. Saltillo, Coahuila, México</p>
             </div>
-            <div class="col-12 col-lg-3">
-                Horarios
+            <div class="col-12 col-lg-4">
+                <h4>Horarios de atención para agendar cita</h4>
+                <p>Lunes a viernes: 9am a 9pm<br/>Sábados y domingos: 10am a 5pm</p>
+
+                <a href="#">Aviso de privacidad</a>
             </div>
-            <div class="col-12 col-lg-6">
-                Ciudades
+            <div class="col-12 col-lg-5 cities">
+                &nbsp;
             </div>
         </div>
     </div>
 </footer>
+
+<style lang="scss">
+    footer {
+        padding: 90px 0 20px;
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .dr-text {
+            font-size: 0.8rem;
+        }
+
+        .cities {
+            background-image: url("/images/cities.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+</style>
