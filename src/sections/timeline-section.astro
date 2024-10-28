@@ -31,6 +31,8 @@
 </section>
 
 <style lang="scss">
+    @use '../scss/variables' as *;
+
     #timeline-section {
         .time-event {
             display: flex;
@@ -41,19 +43,24 @@
                 align-items: center;
                 gap: 20px;
 
+                @media screen and (width < $jade-minimum-width){
+                    flex-direction: column;
+                    text-align: center;
+                }
+
                 .year {
-                    font-family: var(--jade-serif-font);
+                    font-family: $jade-font-serif;
                     font-size: 9rem;
                     font-weight: 900;
-                    color: var(--jade-grullo-color);
+                    color: $jade-color-grullo;
                 }
                 .event {
-                    font-family: var(--jade-serif-font);
+                    font-family: $jade-font-serif;
                     font-size: 1.8rem;
                     font-style: italic;
                     font-weight: 300;
                     line-height: 1.1;
-                    color: var(--jade-tormenta-color);
+                    color: $jade-color-tormenta;
                 }
             }
         }

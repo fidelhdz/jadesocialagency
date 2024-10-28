@@ -52,12 +52,19 @@
 </section>
 
 <style lang="scss">
+    @use '../scss/variables' as *;
+
     #services-section {
         .servicios {
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 40px;
             column-gap: 30px;
+
+            @media screen and (width < $jade-minimum-width){
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+            }
 
             .servicio {
                 display: flex;
@@ -69,7 +76,7 @@
                     width: 100%;
                     height: 260px;
                     background-color: #313131;
-                    border-radius: 30px;
+                    border-radius: $jade-border-radius;
                     background-size: cover;
                     background-repeat: no-repeat;
 

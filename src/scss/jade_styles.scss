@@ -1,22 +1,14 @@
-:root {
-    --jade-electric-blue-color: #4A7177;
-    --jade-grullo-color: #A4A593;
-    --jade-bronce-color: #A78D5C;
-    --jade-tormenta-color: #DFCCC5;
-    --jade-serif-font: "Emberly", serif;
-    // --jade-serif-font: "Times New Roman", serif;
-    --jade-sans-serif-font: "Avenir Next", sans-serif;
-}
+@use './variables' as *;
 
 * {
     box-sizing: border-box;
-    font-family: var(--jade-sans-serif-font);
+    font-family: $jade-font-sans-serif;
     font-size: 14px;
     transition: all ease-in-out 0.4s;
 }
 
 body {
-    background-color: var(--jade-electric-blue-color);
+    background-color: $jade-color-electric-blue;
     color: rgb(255 255 255);
     position: relative;
     background-image: url("/images/back.png");
@@ -31,11 +23,24 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         top: -80px;
-        left: 50%;
+        left: 56%;
+
+        @media screen and (width < $jade-minimum-width){
+            width: 100%;
+            top: 80px;
+            left: 0;
+            background-size: contain;
+            background-position: center;
+        }
     }
 
     section {
         padding: 90px 0;
+        overflow: hidden;
+
+        @media screen and (width < $jade-minimum-width){
+            padding: 60px 20px;
+        }
     }
 
     footer {
@@ -49,11 +54,11 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--jade-grullo-color);
+    color: $jade-color-grullo;
 }
 
 h2 {
-    color: var(--jade-tormenta-color);
+    color: $jade-color-tormenta;
     font-size: 1.125rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -63,22 +68,22 @@ h2 {
         display: block;
         width: 80px;
         height: 3px;
-        background-color: var(--jade-grullo-color);
+        background-color: $jade-color-grullo;
         margin-top: 10px;
     }
 }
 
 h3 {
-    font-family: var(--jade-serif-font);
+    font-family: $jade-font-serif;
     font-style: italic;
     font-weight: 400;
     font-optical-sizing: 2rem;
     font-size: 2.25rem;
-    color: var(--jade-grullo-color);
+    color: $jade-color-grullo;
 }
 
 h4 {
-    color: var(--jade-tormenta-color);
+    color: $jade-color-tormenta;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;

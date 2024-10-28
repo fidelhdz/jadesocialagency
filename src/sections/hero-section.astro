@@ -14,8 +14,8 @@
             <div class="col-12 col-lg-6 text-center hero-decoration">
                 <img src="/images/figuras.webp" alt="" />
                 <div class="contact-data">
-                    <a href="#">hola@jadesocialagency.com</a><br />
-                    <a href="#">844 999 9999</a>
+                    <a href="mailto:hola@jadesocialagency.com">hola@jadesocialagency.com</a><br />
+                    <a href="https://wa.link/x8edhw" target="_blank">844 427 3795</a>
                 </div>
             </div>
         </div>
@@ -23,23 +23,28 @@
 </header>
 
 <style lang="scss">
+    @use '../scss/variables' as *;
     header {
         padding: 140px 0 90px;
+
+        @media screen and (width < $jade-minimum-width){
+            padding: 90px 0 60px;
+        }
 
         .hero-text {
             margin-top: 50%;
             transform: translateY(-50%);
 
             small {
-                font-family: var(--jade-sans-serif-font);
+                font-family: $jade-font-sans-serif;
                 font-weight: 600;
-                color: var(--jade-tormenta-color);
+                color: $jade-color-tormenta;
             }
 
             h1 {
                 font-size: 4rem;
-                font-family: var(--jade-serif-font);
-                color: var(--jade-grullo-color);
+                font-family: $jade-font-serif;
+                color: $jade-color-grullo;
                 line-height: 0.95;
                 margin-bottom: 20px;
                 font-weight: 400;
@@ -73,7 +78,7 @@
                     display: block;
                     width: 30px;
                     height: 1px;
-                    background-color: var(--jade-grullo-color);
+                    background-color: $jade-color-grullo;
                     position: absolute;
                     right: 0;
                     top: -10px;

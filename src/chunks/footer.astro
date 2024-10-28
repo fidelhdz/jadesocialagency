@@ -22,8 +22,20 @@
 </footer>
 
 <style lang="scss">
+    @use '../scss/variables' as *;
+
     footer {
         padding: 90px 0 20px;
+
+        .container {
+            .row {
+                .col-12 {
+                    @media screen and (width < $jade-minimum-width){
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+        }
 
         .footer-logo {
             margin-bottom: 20px;
@@ -37,6 +49,11 @@
             background-image: url("/images/cities.webp");
             background-size: contain;
             background-repeat: no-repeat;
+
+            @media screen and (width < $jade-minimum-width){
+                height: 240px;
+                background-position: center;
+            }
         }
     }
 </style>
