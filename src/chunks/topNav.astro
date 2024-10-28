@@ -5,10 +5,15 @@
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-2 logo-top">
                 <a href="/#top"><img src="/images/jade-logo.svg" width="100px" alt="" /></a>
             </div>
             <div class="col-lg-10 d-md-none d-lg-block">
+                <div class="burger-menu menu-opened">
+                    <!-- <div class="line-bar"></div> -->
+                    <div class="line-bar bar-1"></div>
+                    <div class="line-bar bar-2"></div>
+                </div>
                 <ul class="menu">
                     <li><a href="/#top">Inicio</a></li>
                     <li><a href="/#services-section">Servicios</a></li>
@@ -22,6 +27,8 @@
 </nav>
 
 <style lang="scss">
+    @use '../scss/variables' as *;
+
     nav {
         padding: 10px 0;
         position: sticky;
@@ -31,6 +38,17 @@
         background-size: 100px;
         box-shadow: 0 4px 8px rgb(58 94 106);
         z-index: 10;
+        position: relative;
+
+        @media screen and (width < $jade-minimum-width){
+            position: fixed;
+        }
+
+        .logo-top {
+            @media screen and (width < $jade-minimum-width){
+                text-align: center;
+            }
+        }
 
         .menu {
             list-style: none;
@@ -39,6 +57,10 @@
             justify-content: flex-end;
             align-items: baseline;
             margin-top: 22px;
+
+            @media screen and (width < $jade-minimum-width){
+                display: none;
+            }
 
             li {
                 a {
