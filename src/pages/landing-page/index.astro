@@ -1,8 +1,8 @@
 ---
-import PrincipalLayout from "../../layouts/principalLayout.astro";
+import LPLayout from "../../layouts/LPLayout.astro";
 ---
 
-<PrincipalLayout>
+<LPLayout>
 	<section id="jsa-first">
         <div class="container">
             <div class="row">
@@ -76,11 +76,7 @@ import PrincipalLayout from "../../layouts/principalLayout.astro";
     <section id="jsa-sixth">
         <div class="container">
             <div class="row">
-                <div class="col-6 order-last">
-                    <h3>Comienza tu Aventura con Nosotros</h3>
-                    <p>Dar el primer paso hacia tu celebración perfecta es sencillo. Completa nuestro formulario de registro y un coordinador especializado se pondrá en contacto contigo para conocer tus sueños y comenzar a transformarlos en planes concretos. Tu viaje hacia un evento inolvidable comienza aquí.</p>
-                </div>
-                <div class="col-6 order-first">
+                <div class="col-12">
                     <script src="https://js.hsforms.net/forms/embed/49525772.js" defer></script>
                     <div class="hs-form-frame" data-region="na1" data-form-id="a5e79c13-a441-462f-bb86-b88c72eb29b4" data-portal-id="49525772"></div>
                 </div>
@@ -110,9 +106,12 @@ import PrincipalLayout from "../../layouts/principalLayout.astro";
             </div>
         </div>
     </section>
-</PrincipalLayout>
+</LPLayout>
 
 <style lang="scss">
+    #jsa-sixth {
+        background-color: #ccdccb;
+    }
     .jsa-lp-text {
         position: relative;
         margin-top: 10%;
