@@ -24,6 +24,7 @@ body {
         background-repeat: no-repeat;
         top: -80px;
         left: 56%;
+        z-index: -1;
 
         @media screen and (width < $jade-minimum-width){
             width: 100%;
